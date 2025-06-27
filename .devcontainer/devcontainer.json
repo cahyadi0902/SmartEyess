@@ -1,0 +1,16 @@
+{
+  "name": "SmartEyes Android",
+  "image": "mcr.microsoft.com/vscode/devcontainers/java:11",
+  "features": {
+    "ghcr.io/devcontainers/features/android-sdk:1": {}
+  },
+  "postCreateCommand": "sdkmanager \"platforms;android-30\" \"platform-tools\" \"build-tools;30.0.3\"",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
